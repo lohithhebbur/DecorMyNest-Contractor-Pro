@@ -1,0 +1,11 @@
+/* Decor My Nest — Projects module
+   Builds on the shared CRM component styles in customers.css. */
+
+#projectCustomer {
+  background: var(--paper);
+}
+
+.crm-table td .crm-muted a { color: inherit; }
+
+.quo-card-actions { display: flex; gap: 8px; margin-top: 10px; }
+.quo-card-actions .crm-btn-ghost { flex: 1; }
