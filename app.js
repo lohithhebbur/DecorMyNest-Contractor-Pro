@@ -147,7 +147,7 @@ let leicaDevice = null;
 let leicaCharacteristic = null;
 let leicaTarget = null;
 const DISTO_SERVICE = "3ab10100-f831-4395-b29d-570977d5bf94";
-const DISTO_DISTANCE = "3ab10101-f831-4395-b29d-570977d5bf94";
+const DISTO_DISTANCE = "3ab10111-f831-4395-b29d-570977d5bf94";
 const DISTO_MODEL = "3ab1010c-f831-4395-b29d-570977d5bf94";
 
 function save() {
