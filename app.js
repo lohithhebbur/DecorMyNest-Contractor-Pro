@@ -772,11 +772,7 @@ async function connectLeica() {
   try {
     setLeicaStatus("Choose your Leica DISTO X3…", "waiting");
     leicaDevice = await navigator.bluetooth.requestDevice({
-      filters: [
-        { namePrefix: "DISTO X3" },
-        { namePrefix: "DISTO" },
-        { services: [DISTO_SERVICE] }
-      ],
+      acceptAllDevices: true,
       optionalServices: [DISTO_SERVICE]
     });
     leicaDevice.addEventListener("gattserverdisconnected", () => {
