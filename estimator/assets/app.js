@@ -855,7 +855,7 @@ async function connectLeica() {
   } catch (error) {
     const cancelled = error?.name === "NotFoundError";
     setLeicaStatus(cancelled ? "Connection cancelled — manual entry active" : "Could not connect to DISTO X3", "error");
-    if (!cancelled) showToast("On the X3, switch Bluetooth ON and keep it within 10 metres");
+    if (!cancelled) showToast(`Error: ${error?.name || "?"} — ${error?.message || "no message"}`);
   }
 }
 $("connectLeicaButton").onclick = connectLeica;
